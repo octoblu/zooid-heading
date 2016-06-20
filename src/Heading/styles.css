@@ -1,0 +1,37 @@
+.level1 {
+  font-size: 42px;
+}
+
+.level2 {
+  font-size: 36px;
+}
+
+.level3 {
+  font-size: 30px;
+}
+
+.level4 {
+  font-size: 24px;
+}
+
+.level5 {
+  font-size: 18px;
+}
+
+.level6 {
+  font-size: 16px;
+}
+
+.align-left {}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
