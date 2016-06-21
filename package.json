@@ -1,6 +1,6 @@
 {
   "name": "zooid-heading",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Heading",
   "main": "dist/bundle.js",
   "scripts": {
