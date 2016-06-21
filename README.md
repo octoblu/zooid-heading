@@ -1,11 +1,11 @@
 # zooid-heading
-A React component to render Zooid like headings. This component should be used instead of <h1> ... <h6>
+A React component to render Zooid like headings. This component should be used instead of <h1> to <h6>
 
-## Install
+### Install
 ```
 npm install --save zooid-heading
 ```
-## Props
+### Props
 | Prop      | Type   | Default | Description                          |
 | ----------| -------| --------| -------------------------------------|
 | className | string |         | Additional css classes for your heading|
@@ -14,7 +14,7 @@ npm install --save zooid-heading
 | uppercase | boolean|  false  | DOES THIS |
 
 
-## Example
+### Example
 ```jsx
 <Heading level={1}>Level 1 Header</Heading>
 <Heading uppercase>Uppercase Header</Heading>
