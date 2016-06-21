@@ -1,5 +1,5 @@
 # zooid-heading
-A React component to render Zooid like headings. This component should be used instead of <h1> to <h6>
+A React component to render Zooid like headings. This component should be used instead of h1 - h6
 
 ### Install
 ```
