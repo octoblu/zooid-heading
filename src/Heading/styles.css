@@ -1,24 +1,36 @@
+.root {
+  margin-top: 0;
+  margin-bottom: 32px;
+  line-height: 1.25;
+}
+
 .level1 {
+  composes: root;
   font-size: 42px;
 }
 
 .level2 {
+  composes: root;
   font-size: 36px;
 }
 
 .level3 {
+  composes: root;
   font-size: 30px;
 }
 
 .level4 {
+  composes: root;
   font-size: 24px;
 }
 
 .level5 {
+  composes: root;
   font-size: 18px;
 }
 
 .level6 {
+  composes: root;
   font-size: 16px;
 }
 
