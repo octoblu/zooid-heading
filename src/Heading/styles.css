@@ -34,6 +34,10 @@
   font-size: 16px;
 }
 
+.align-left {
+  text-align: left;
+}
+
 .align-right {
   text-align: right;
 }
