@@ -1,10 +1,19 @@
 language: node_js
 node_js:
 - '5'
-
+branches:
+  only:
+  - "/^v[0-9]/"
 before_deploy:
 - npm run build
-
+addons:
+  code_climate:
+    repo_token: fe3468351c4dcff59e40b79ccae673cfd27d9b3b8c0399da9b47ce2d60e4d876
+before_script:
+- npm install -g codeclimate-test-reporter
+after_script:
+- npm run coverage
+- codeclimate-test-reporter < coverage/lcov.info
 deploy:
   provider: npm
   email: serveradmin@octoblu.com
