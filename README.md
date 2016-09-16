@@ -2,9 +2,13 @@
 A React component to render Zooid like headings. This component should be used instead of h1 - h6
 
 [![Build Status](https://travis-ci.org/octoblu/zooid-heading.svg?branch=master)](https://travis-ci.org/octoblu/zooid-heading)
-[![npm version](https://badge.fury.io/js/zooid-heading.svg)](http://badge.fury.io/js/zooid-heading)
-[![Code Climate](https://codeclimate.com/github/octoblu/zooid-heading.png)](https://codeclimate.com/github/octoblu/zooid-heading)
+[![Test Coverage](https://codecov.io/gh/octoblu/zooid-heading/branch/master/graph/badge.svg)](https://codecov.io/gh/octoblu/zooid-heading)
+[![Dependency status](http://img.shields.io/david/octoblu/zooid-heading.svg?style=flat)](https://david-dm.org/octoblu/zooid-heading)
+[![devDependency Status](http://img.shields.io/david/dev/octoblu/zooid-heading.svg?style=flat)](https://david-dm.org/octoblu/zooid-heading#info=devDependencies)
 [![Slack Status](http://community-slack.octoblu.com/badge.svg)](http://community-slack.octoblu.com)
+
+[![NPM](https://nodei.co/npm/zooid-heading.svg?style=flat)](https://npmjs.org/package/zooid-heading)
+
 
 
 
