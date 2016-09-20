@@ -9,7 +9,6 @@ addons:
 before_script:
 - npm install -g codeclimate-test-reporter
 after_script:
-- npm run coverage
 - codeclimate-test-reporter < coverage/lcov.info
 deploy:
   provider: npm
@@ -18,8 +17,11 @@ deploy:
     secure: Iaa+dTYOvkTHiBzAuYtNWzpBdxGr2UFXzggV8tVbh96W+6gpredSLKAGVt7/fLT7REx8rVB1uAeAH1qLoPHCQGEza6KDTQ6kFBhekYE3drRWvzZuYnuWZ1lM2KH2zaLCRA9gl9ENgjrAaMwhSD0WjNsKSf7pWSZJA3PRceRtVrfgQ/1hCUzmaAcO1geGM1uqdllGD5vR9LNzGOLTE2k1VZhcCiQ+BEipHrwvwY3bn8ZDNgJebwThaiYK2L7MQPgj4UAzkpn40nkzBZ8cppKVSRoCGDRXEmdzLq9PSF3x2bfqYXsxek1Btz6eq2jX9NpgkC1bnkE4Cu764pL1AU107p2qRRESUQefnBxuXPuMmFU+eLzO+Hk5mcCR8iDmj/5WoQsy2Ftg1+x0/LMOfR3MLqjPjd7f0LJVhzw0xVsLouNV4+MrD/ZgObuZu1P4Xe8tb07YVlXgmGLPPZHBKEh2V63wV2x4vKRZ4uRWwJFAp/WEw1tm9loH0yBDXCv06ZN7tzyf1iJEZpuWhnROJl3wtC6Y3tHxhtlcNdylNxjq8ica1wnEyc52gPLD3PFscpbi022wR+JJCf4rdsluAscrWqBaMigdkURzX6QulXWhv1wCqTEqqn/tS3qTM1MGmhwUCxOw3NhBASM+tl5FL4vZgAD8no3SMrprbQUOiH/w1ew=
   on:
     tags: true
-after_success:
-- bash <(curl -s https://codecov.io/bash)
 branches:
   only:
   - "/^v[0-9]/"
+after_success:
+- npm run coverage
+- npm run mocha:json
+- bash <(curl -s https://codecov.io/bash)
+- bash <(curl -s https://codecov.octoblu.com/bash)
