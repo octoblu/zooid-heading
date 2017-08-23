@@ -1,9 +1,7 @@
 var path              = require('path');
 var webpack           = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var plugins = [
-  // new ExtractTextPlugin('bundle.css', { allChunks: true }),
   new webpack.NoEmitOnErrorsPlugin(),
   new webpack.DefinePlugin({
     'process.env': {
@@ -40,11 +38,6 @@ module.exports = {
         loaders: ['babel-loader'],
         include: /src/
       },
-      {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
-        exclude: /node_modules/
-      }
     ]
   }
 };

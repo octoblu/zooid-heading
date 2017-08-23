@@ -1,6 +1,5 @@
 import styled from "emotion/react"
 import PropTypes from "prop-types"
-import React from "react"
 
 const propTypes = {
   children: PropTypes.node,
